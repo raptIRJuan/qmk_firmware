@@ -21,10 +21,10 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <string.h>
-#include <hal.h>
+#include "hal.h"
 #include "timer.h"
 #include "wait.h"
-#include "print.h"
+#include "printf.h"
 #include "matrix.h"
 #include "action.h"
 #include "keycode.h"

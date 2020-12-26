@@ -29,9 +29,7 @@ This level contains all of the options for that particular keymap. If you wish t
 
 This is a C header file that is one of the first things included, and will persist over the whole project (if included). Lots of variables can be set here and accessed elsewhere. The `config.h` file shouldn't be including other `config.h` files, or anything besides this:
 
-```c
-#include "config_common.h"
-```
+    #include "config_common.h"
 
 
 ## Hardware Options
@@ -137,8 +135,6 @@ If you define these options you will enable the associated feature, which may in
 * `#define RETRO_TAPPING`
   * tap anyway, even after TAPPING_TERM, if there was no other key interruption between press and release
   * See [Retro Tapping](tap_hold.md#retro-tapping) for details
-* `#define RETRO_TAPPING_PER_KEY`
-  * enables handling for per key `RETRO_TAPPING` settings
 * `#define TAPPING_TOGGLE 2`
   * how many taps before triggering the toggle
 * `#define PERMISSIVE_HOLD`
